@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/cv_pinjam_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Id Pinjam"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cv_pinjam_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv_pinjam_id"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Nama"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/cv_pinjam_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv_pinjam_nama"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Tanggal Pinjam"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:id="@+id/cv_pinjam_besar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv_pinjam_tanggal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Besar Pinjam"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:id="@+id/cv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv_pinjam_besar"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Besar Pinjam"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

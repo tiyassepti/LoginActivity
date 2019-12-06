@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.pinjamanActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btnkembali"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:src="@drawable/kembali"
+
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txtjudul"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:text="Pinjaman Peternak"
+                android:gravity="center"
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/btnriwayat"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:src="@drawable/kembali"
+                android:text="Riwayat"
+                tools:ignore="MissingConstraints" />
+
+
+        </LinearLayout>
+
+
+    <com.rengwuxian.material.MaterialEditText
+        android:id="@+id/txtnominal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="8dp"
+        android:enabled="false"
+        android:gravity="center_vertical"
+        android:hint=""
+        android:singleLine="true"
+        android:text="Masukan Nominal"
+        android:textSize="16sp"
+        app:met_baseColor="@color/white"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelTextColor="@color/white"
+        app:met_helperTextColor="@color/white"
+        app:met_primaryColor="@color/white"
+        app:met_textColor="@color/white"
+        app:met_textColorHint="@color/white" />
+
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/detail_bulan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="8dp"
+        android:enabled="false"
+        android:gravity="center_vertical"
+        android:hint="Masukan berapa kali angsur perbulan"
+        android:singleLine="true"
+        android:textSize="16sp"
+        app:met_baseColor="@color/white"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelTextColor="@color/white"
+        app:met_helperTextColor="@color/white"
+        app:met_primaryColor="@color/white"
+        app:met_textColor="@color/white"
+        app:met_textColorHint="@color/white" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/detail_kelurahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="8dp"
+        android:enabled="false"
+        android:gravity="center_vertical"
+        android:hint="Kelurahan"
+        android:singleLine="true"
+        android:textSize="16sp"
+        app:met_baseColor="@color/white"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelTextColor="@color/white"
+        app:met_helperTextColor="@color/white"
+        app:met_primaryColor="@color/white"
+        app:met_textColor="@color/white"
+        app:met_textColorHint="@color/white" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/detail_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="8dp"
+        android:enabled="false"
+        android:gravity="center_vertical"
+        android:hint="Total yang diterima"
+        android:singleLine="true"
+        android:textSize="16sp"
+        app:met_baseColor="@color/white"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelTextColor="@color/white"
+        app:met_helperTextColor="@color/white"
+        app:met_primaryColor="@color/white"
+        app:met_textColor="@color/white"
+
+        app:met_textColorHint="@color/white" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/detail_jumlahygdibayar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="8dp"
+        android:enabled="false"
+        android:gravity="center_vertical"
+        android:hint="Jumlah yang Harus dibayar"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="16sp"
+        app:met_baseColor="@color/white"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelTextColor="@color/white"
+        app:met_helperTextColor="@color/white"
+        app:met_primaryColor="@color/white"
+        app:met_textColor="@color/white"
+        app:met_textColorHint="@color/white" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/detail_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="8dp"
+        android:enabled="false"
+        android:gravity="center_vertical"
+        android:hint="Tanggal Pembayaran"
+        android:singleLine="true"
+        android:inputType="date"
+        android:textSize="16sp"
+        app:met_baseColor="@color/white"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelTextColor="@color/white"
+        app:met_helperTextColor="@color/white"
+        app:met_primaryColor="@color/white"
+        app:met_textColor="@color/white"
+        app:met_textColorHint="@color/white" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Berikutnya"
+            android:id="@+id/btnberikut"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Simpanna"
+            android:id="@+id/btnsimpan"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
